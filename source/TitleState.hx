@@ -273,7 +273,7 @@ class TitleState extends MusicBeatState
 
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
 		logoBl.frames = Paths.getSparrowAtlas('Title/EU-Logo');
-		
+		logoBl.setGraphicSize(Std.int(logoBl.width * 0.6));
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'Logo', 24, false);
 		logoBl.animation.play('bump');
